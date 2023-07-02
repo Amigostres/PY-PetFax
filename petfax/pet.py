@@ -8,7 +8,7 @@ pets = json.load(open("pets.json"))
 
 @bp.route('/')
 def index(): 
-    return render_template("index.html", pets=pets)
+    return render_template("pets/index.html", pets=pets)
 
 @bp.route('/profile/<id>')
 def animal_profile(id):

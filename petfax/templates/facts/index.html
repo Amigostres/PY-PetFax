@@ -1,0 +1,10 @@
+<body>
+    <div class="container">
+        <H1>UserFax</H1>
+        {% for fact in facts %}
+            <h2>id : {{ fact.fact_id }}</h2>
+            <H4>Submitted by {{ fact.submitter }}</H4>
+            {{ fact.fact }}
+        {% endfor %}
+    </div>
+</body>
